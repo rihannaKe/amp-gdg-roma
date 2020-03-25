@@ -2,16 +2,16 @@
     { 
         "title": "amp-img",
         "description": "Esempio uso componente amp-img",
-        "code_url": "/amp-img/index.html",
-        "example_url":"https://rihannake.github.io/amp-gdg-roma/amp-img/index.html"
+        "code_url": "https://github.com/rihannaKe/amp-gdg-roma/blob/master/amp-img/index.html",
+        "example_url":"/amp-gdg-roma/amp-img/index.html"
     },
     { 
         "title": "amp-carousel",
         "description": "Esempio uso componente amp-carousel",
-        "code_url": "/amp-carousel/index.html",
-        "example_url":"https://rihannake.github.io/amp-gdg-roma/amp-gdg-roma/amp-carousel/index.html"
+        "code_url": "https://github.com/rihannaKe/amp-gdg-roma/blob/master/amp-carousel/index.html",
+        "example_url":"/amp-gdg-roma/amp-carousel/index.html"
     }
 
 
-]
+ ]
 }
