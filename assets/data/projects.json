@@ -22,7 +22,14 @@
         "description": "Esempio uso componente amp-script con amp-form",
         "code_url": "https://github.com/rihannaKe/amp-gdg-roma/blob/master/amp-script/index.html",
         "example_url":"/amp-gdg-roma/amp-script/index.html"
+    },
+    { 
+        "title": "amp-script",
+        "description": "Esempio uso componente amp-fx-collection per far sparire header e footer a scroll-down",
+        "code_url": "https://github.com/rihannaKe/amp-gdg-roma/blob/master/amp-fx-collection/index.html",
+        "example_url":"/amp-gdg-roma/amp-fx-collection/index.html"
     }
+
 
 
  ]
