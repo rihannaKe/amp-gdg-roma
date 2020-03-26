@@ -89,13 +89,12 @@
       margin: .5rem;
       border-radius: 8px;
     }
+    main{
+      margin-top: 60px;
+    }
     main h2 {
       margin-left: .5rem;
       margin-right: .5rem;
-    }
-
-    .top {
-      top: 0;
     }
     .nav-bar h1 {
       margin: 0;
@@ -113,9 +112,25 @@
       z-index: 1000;
     }
     amp-iframe {
-      border: 1px solid grey;
+      border: 2px solid grey;
+      border-radius: 5px;
     }
-
+    .container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .item1{
+      width:35%;
+    }
+    .item2{
+      width:65%;
+    }
+    @media(min-width){
+      .item1,.item2{
+        width: 100%
+      }
+    }
   </style>
 </head>
 
@@ -126,15 +141,19 @@
   <main>
       <amp-list width="auto" height="100" layout="fixed-height" src="/amp-gdg-roma/assets/data/projects.json">
         <template type="amp-mustache">
-          <div class="card">
-            <h2>{{title}}</h2>
-            <p>{{description}}</p>
-            <p><a href="{{code_url}}" target="_blank">See the source code</a></p>
-            <p><a href="{{example_url}}" target="_blank">See working example full page</a></p>
-            <!-- sandbox="allow-same-origin" -->
-            <amp-iframe width=300 height=300 layout="responsive" sandbox="allow-scripts" src="{{example_url}}">
-              <amp-img layout="fill" src="https://foo.com/foo.png" placeholder></amp-img>
-            </amp-iframe>
+          <div class="card container">
+            <div class="item1">
+                <h2>{{title}}</h2>
+                <p><a href="{{code_url}}" target="_blank">See the source code</a></p>
+                <p><a href="{{example_url}}" target="_blank">See working example full page</a></p>
+            </div>
+            <div  class="item2">
+              <!-- sandbox="allow-same-origin" -->
+              <p>{{description}}</p>
+              <amp-iframe width=300 height=300 layout="responsive" sandbox="allow-scripts" src="{{example_url}}">
+                <amp-img layout="fill" src="https://foo.com/foo.png" placeholder></amp-img>
+              </amp-iframe>
+            </div>
           </div>
         </template>
       </amp-list>
