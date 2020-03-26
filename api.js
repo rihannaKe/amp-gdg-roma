@@ -16,6 +16,10 @@ app.use(ampCors({
 
 app.use(ampCorsMiddleware);
 
+app.get('/test', function(req,res){
+  res.json({data: "test"});
+})
+
 app.post('/form-email', function (req, res) {
   res.json({data: "OK"});
 })
