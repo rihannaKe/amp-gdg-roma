@@ -140,13 +140,13 @@
         font-size: 1em;
         color: #005af0;
         display: inline-block;
-        padding: .75em;
+        padding: .50em;
         margin: 10px;
         text-decoration: none;
         text-align: center;
         border-radius: 3px;
         background-color:white;
-        border: 0;
+        border: 1px solid;
         cursor: pointer;
     }
   </style>
@@ -162,8 +162,8 @@
           <div class="card container">
             <div class="item1">
                 <h2>{{title}}</h2>
-                <p><a class="btn" href="{{code_url}}" target="_blank">See code</a></p>
-                <p><a class="btn" href="{{example_url}}" target="_blank">See full page</a></p>
+                <a class="btn" href="{{code_url}}" target="_blank">See code</a>
+                <a class="btn" href="{{example_url}}" target="_blank">See full page</a>
             </div>
             <div  class="item2">
               <!-- sandbox="allow-same-origin" -->
