@@ -11,11 +11,17 @@
         "code_url": "https://github.com/rihannaKe/amp-gdg-roma/blob/master/amp-carousel/index.html",
         "example_url":"/amp-gdg-roma/amp-carousel/index.html"
     },
-		{ 
+	{ 
         "title": "amp-fx-flying-carpet",
         "description": "Esempio uso componente amp-fx-flying-carpet",
-        "code_url": "https://github.com/rihannaKe/amp-gdg-roma/blob/master/amp-fx-flying-carpet/index.html",
-        "example_url":"/amp-gdg-roma/amp-fx-flying-carpet/index.html"
+        "code_url": "https://github.com/rihannaKe/amp-gdg-roma/blob/master/amp-fx-flyingcarpet/index.html",
+        "example_url":"/amp-gdg-roma/amp-fx-flyingcarpet/index.html"
+    },
+    { 
+        "title": "amp-script",
+        "description": "Esempio uso componente amp-script con amp-form",
+        "code_url": "https://github.com/rihannaKe/amp-gdg-roma/blob/master/amp-script/index.html",
+        "example_url":"/amp-gdg-roma/amp-script/index.html"
     }
 
 
