@@ -2,7 +2,7 @@
 
 const express = require('express')
 const app = express()
-const port = 8080
+const port = process.env.PORT || 80
 const ampCors = require('amp-toolbox-cors')
 const { join } = require('path')
 const { promisify } = require('util')
@@ -16,6 +16,10 @@ app.use(ampCors({
 
 app.use(ampCorsMiddleware);
 
+app.get('/', function (req, res) {
+  res.send('Hello!')
+})
+
 app.get('/test', function(req,res){
   res.json({data: "test"});
 })
@@ -23,4 +27,6 @@ app.get('/test', function(req,res){
 app.post('/form-email', function (req, res) {
   res.json({data: "OK"});
 })
+
+
 app.listen(port, () => console.log(`App listening on port ${port}!`))
