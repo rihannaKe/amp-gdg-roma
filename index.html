@@ -110,6 +110,7 @@
       position: fixed;
       width: 100%;
       z-index: 1000;
+      top:0;
     }
     amp-iframe {
       border: 2px solid grey;
@@ -117,8 +118,12 @@
     }
     .container{
       display: flex;
+      width: 100vw;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      align-content: center;
     }
     .item1{
       width:35%;
@@ -126,16 +131,29 @@
     .item2{
       width:65%;
     }
-    @media(min-width){
+    @media(max-width:767px) {
       .item1,.item2{
         width: 100%
       }
+    }
+    .btn {
+        font-size: 1em;
+        color: #005af0;
+        display: inline-block;
+        padding: .75em;
+        margin: 10px;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 3px;
+        background-color:white;
+        border: 0;
+        cursor: pointer;
     }
   </style>
 </head>
 
 <body>
-  <header class="nav-bar top">
+  <header class="nav-bar">
     <h1>Amp Components example</h1>
   </header>
   <main>
@@ -144,8 +162,8 @@
           <div class="card container">
             <div class="item1">
                 <h2>{{title}}</h2>
-                <p><a href="{{code_url}}" target="_blank">See the source code</a></p>
-                <p><a href="{{example_url}}" target="_blank">See working example full page</a></p>
+                <p><a class="btn" href="{{code_url}}" target="_blank">See code</a></p>
+                <p><a class="btn" href="{{example_url}}" target="_blank">See full page</a></p>
             </div>
             <div  class="item2">
               <!-- sandbox="allow-same-origin" -->
