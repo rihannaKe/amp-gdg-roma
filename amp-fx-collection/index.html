@@ -1,0 +1,75 @@
+<!doctype html>
+<html ⚡>
+<head>
+<meta charset="utf-8">
+  <title>amp-fx-collection</title>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+  <link rel="canonical" href="https://amp.dev/documentation/examples/components/amp-fx-collection/index.html">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <style amp-custom>
+   header,footer,main{
+       text-align:center;
+   }
+   .contents{
+       height: 20vh;
+       width: 100%;
+       background-color: bisque;
+       margin: 15px;
+       border-radius: 10px;
+    }
+    header{
+        height:10vh;
+        width: 100vw;
+        display:flex;
+        justify-content: space-around;
+        background-color: cadetblue;
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+    }
+    footer{
+        height:10vh;
+        width: 100vw;
+        display:flex;
+        justify-content: center;
+        background-color: cadetblue;
+        align-content: center;
+        position: fixed;
+        overflow: hidden;
+        bottom: 0;
+    }
+    main{
+        width:100vw;
+        margin: 20px;
+        margin-top: 10vh;
+    }
+
+  </style>
+</head>
+<body>
+    <header amp-fx="float-in-top">
+        <h1>Header</h1>
+    </header>
+    <main>
+        <div class="contents"></div>
+        <div class="contents"></div>
+        <div class="contents"></div>
+        <div class="contents"></div>
+        <div class="contents"></div>
+        <div class="contents"></div>
+        <div class="contents"></div>
+        <div class="contents"></div>
+        <div class="contents"></div>
+        <div class="contents"></div>
+        <div class="contents"></div>
+    </main>
+
+    <footer  amp-fx="float-in-bottom">
+        <p>footer</p>
+    </footer>
+
+</body>
+
+</html>
