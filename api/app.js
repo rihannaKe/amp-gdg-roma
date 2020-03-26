@@ -1,0 +1,23 @@
+'use strict'
+
+const express = require('express')
+const app = express()
+const port = 9090
+const ampCors = require('amp-toolbox-cors')
+const { join } = require('path')
+const { promisify } = require('util')
+const { readFile } = require('fs')
+const readFileAsync = promisify(readFile)
+
+const ampCorsMiddleware = ampCors({ verbose: true })
+app.use(ampCors({
+  verifyOrigin: false
+}));
+
+app.use(ampCorsMiddleware);
+
+app.post('/form-email', function (req, res) {
+  res.json({data: "OK"});
+})
+
+app.listen(port, () => console.log(`App listening on port ${port}!`))
