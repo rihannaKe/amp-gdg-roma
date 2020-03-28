@@ -28,5 +28,10 @@ app.post('/form-email', function (req, res) {
   res.json({data: "OK"});
 })
 
+app.get('/time', (request, response) => {
+  response.json({
+    time: new Date().toLocaleTimeString(),
+  });
+});
 
 app.listen(port, () => console.log(`App listening on port ${port}!`))
