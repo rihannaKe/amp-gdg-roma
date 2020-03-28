@@ -28,6 +28,12 @@
         "description": "Esempio uso componente amp-fx-collection per far sparire header e footer a scroll-down",
         "code_url": "https://github.com/rihannaKe/amp-gdg-roma/blob/master/amp-fx-collection/index.html",
         "example_url":"/amp-gdg-roma/amp-fx-collection/index.html"
+    },
+    { 
+        "title": "amp-bind",
+        "description": "Esempi uso componente amp-bind",
+        "code_url": "https://github.com/rihannaKe/amp-gdg-roma/blob/master/amp-bind/index.html",
+        "example_url":"/amp-gdg-roma/amp-bind/index.html"
     }
 
 
