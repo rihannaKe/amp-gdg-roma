@@ -34,9 +34,12 @@
         "description": "Esempi uso componente amp-bind",
         "code_url": "https://github.com/rihannaKe/amp-gdg-roma/blob/master/amp-bind/index.html",
         "example_url":"/amp-gdg-roma/amp-bind/index.html"
+    },
+    { 
+        "title": "amp-animation",
+        "description": "Esempi uso componente amp-animation",
+        "code_url": "https://github.com/rihannaKe/amp-gdg-roma/blob/master/amp-animation/index.html",
+        "example_url":"/amp-gdg-roma/amp-animation/index.html"
     }
-
-
-
  ]
 }
